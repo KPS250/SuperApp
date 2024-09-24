@@ -8,6 +8,7 @@ ScriptManager.shared.addResolver(async (scriptId, caller) => {
   const resolveURL = Federated.createURLResolver({
     containers: {
       MiniApp: 'http://localhost:9000/[name][ext]',
+      //'https://storage.googleapis.com/bundle_store/repack/MiniApp.container.bundle', // URL for MiniApp
     },
   });
 

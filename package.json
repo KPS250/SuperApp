@@ -18,9 +18,13 @@
     "run:host-app:ios": "yarn workspace HostApp run ios",
     "run:host-app:android": "yarn workspace HostApp run android",
     "run:mini-app:ios": "yarn workspace MiniApp run ios",
-    "run:mini-app:android": "yarn workspace MiniApp run android"
+    "run:mini-app:android": "yarn workspace MiniApp run android",
+    "bundle:mini-app:ios": "yarn workspace MiniApp bundle:ios",
+    "bundle:mini-app:android": "yarn workspace MiniApp bundle:android"
   },
   "devDependencies": {
-    "concurrently": "^7.6.0"
+    "concurrently": "^7.6.0",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
   }
 }

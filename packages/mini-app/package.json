@@ -13,7 +13,11 @@
     "lint": "eslint .",
     "start": "react-native webpack-start --port 9000",
     "start:standalone": "STANDALONE=1 react-native webpack-start",
-    "test": "jest"
+    "test": "jest",
+    "bundle:ios": "react-native bundle --platform ios --entry-file index.js --dev false --bundle-output ./ios/main.jsbundle --assets-dest ./ios",
+    "bundle:android": "react-native webpack-bundle --platform android --entry-file index.js --dev false --bundle-output bundle/index.android.bundle --assets-dest ./android/app/src/main/res",
+    "bundle:androidw": "webpack bundle --config webpack.config.mjs --mode production --entry-file index.js",
+    "bundle:iosw": "webpack --config webpack.config.mjs --mode production"
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.6",
