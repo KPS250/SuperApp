@@ -20,7 +20,8 @@
     "run:mini-app:ios": "yarn workspace MiniApp run ios",
     "run:mini-app:android": "yarn workspace MiniApp run android",
     "bundle:mini-app:ios": "yarn workspace MiniApp bundle:ios",
-    "bundle:mini-app:android": "yarn workspace MiniApp bundle:android"
+    "bundle:mini-app:android": "yarn workspace MiniApp bundle:android",
+    "bundle:mini-app": "yarn bundle:mini-app:ios && yarn bundle:mini-app:android"
   },
   "devDependencies": {
     "concurrently": "^7.6.0",

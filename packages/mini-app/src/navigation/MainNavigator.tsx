@@ -21,13 +21,15 @@ const Main = createNativeStackNavigator<MainStackParamList>();
 const MainNavigator = () => {
   return (
     <Main.Navigator
-      screenOptions={{
+    /*screenOptions={{
         headerTitle: 'MiniApp',
         headerBackTitleVisible: false,
         headerStyle: styles.header,
         headerTitleStyle: styles.headerTitle,
         headerTintColor: 'rgba(255,255,255,1)',
-      }}>
+      }}
+        */
+    >
       <Main.Screen name="Home" component={HomeScreen} />
       <Main.Screen name="Gallery" component={GalleryScreen} />
     </Main.Navigator>
