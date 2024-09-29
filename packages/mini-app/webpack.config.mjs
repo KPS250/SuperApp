@@ -199,6 +199,7 @@ export default env => {
           use: {
             loader: '@callstack/repack/assets-loader',
             options: {
+              inline: true,
               platform,
               devServerEnabled: Boolean(devServer),
               /**

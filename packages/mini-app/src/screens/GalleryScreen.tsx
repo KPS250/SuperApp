@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
   },
   separator: {
     height: 1,
-    backgroundColor: 'rgba(127, 103, 190, 1)',
+    backgroundColor: 'gray',
   },
 });
 
